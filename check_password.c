@@ -1,4 +1,4 @@
-// clang -fPIC -shared -o libcheck_password.so check_password.c
+// clang -O0 -g -fPIC -fno-omit-frame-pointer -fsanitize=address -fsanitize-address-use-after-scope -fno-optimize-sibling-calls -shared -o libcheck_password.so check_password.c
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>

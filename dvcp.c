@@ -1,4 +1,4 @@
-// clang -fPIC -shared -DDEBUG_PRINTS -o libdvcp.so dvcp_parser.c
+// clang -O0 -g -fPIC -fno-omit-frame-pointer -shared -o libdvcp.so dvcp.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
